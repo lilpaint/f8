@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    background-color: #fff;
+}
+
+.mgl-auto {
+    margin-left: auto;
+}
+
+.mgr-auto {
+    margin-right: auto;
+}
+
+.row {
+    width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col {
+}
+
+.col-2 {
+    width: 43%;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.col-3 {
+    width: 31.3%;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.col-5 {
+    width: 18.1%;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#header {
+    position: relative;
+    background: url('https://fullstack.edu.vn/assets/images/home-img.jpg') top center / cover no-repeat;
+    padding-top: 100vh;
+}
+
+#header .bar {
+    height: 55px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .bar-item {
+    width: 70%;
+}
+
+#header .logo {
+    display: inline-block;
+    width: 20%;
+    line-height: 70px;
+}
+
+#header .logo img {
+    width: 120px;
+}
+
+#nav {
+    width: 40%;
+    display: inline-block;
+    float: right;
+}
+
+#nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+#header a {
+    padding: 0px 20px;
+    line-height: 55px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#header .login {
+    width: 40%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+#header .slogan {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    top: 50vh;
+    z-index: 0;
+}
+
+#header .text-purpose {
+    margin: 20px 0px;
+}
+
+#header .text-slogan {
+    margin: 20px 0px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#header .slogan a {
+    width: 160px;
+    height: 45px;
+    display: inline-block;
+    background-color: #f05123;
+    border-radius: 16px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#content {
+
+}
+
+#content .intro {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+    text-align: center;
+}
+
+#content .intro img {
+    width: 80px;
+}
+
+#content .text-intro {
+    padding: 20px 0px;
+    font-weight: 600;
+}
+
+#content .service {
+    width: 70%;
+}
+
+#content .text-service {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#content .desc-service {
+    text-align: center;
+    font-size: 14px;
+}
+
+#content .row-service {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#content .service-item {
+    border: 1px solid #ccc;
+    z-index: 0;
+}
+
+#content .img-service {
+    width: 100%;
+    transition: all .3s ease;
+    padding-top: 56%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    position: relative;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+#content .service-info {
+    width: 100%;
+    padding: 20px;
+}
+
+#content .service-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#content .service-desc {
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+#content .service-more {
+    width: 100%;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#content .service-more p {
+    color: #fff;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 8px;
+    width: 28%;
+    float: left;
+    background-color: #f05123;
+    border-radius: 4px;
+}
+
+#content .service-more p:last-child {
+    background-color: #00FF7F;
+}
+
+#content .service-more p:last-child:hover {
+    background-color: #000;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+}
+
+#footer .footer-list {
+    width: 70%;
+    padding: 40px 0px;
+    line-height: 1.6;
+}
+
+#footer .footer-title {
+    font-size: 22px;
+    padding: 8px 0px;
+}
+
+#footer .footer-sub {
+    font-size: 18px;
+    padding: 8px 0px;
+}
+
+#footer .footer-text {
+    font-size: 15px;
+}
+
+#footer .footer-list a {
+    color: #fff;
+}
+
+.bar-mobile {
+    display: none;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+@media (max-width: 720px) {
+
+    #header {
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 16px;
+    }
+
+    .bar-icon {
+        float: right;
+        padding: 12px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .bar-mobile {
+        display: block;
+        height: 60px;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    #navmobile {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        max-width: 100%;
+        transform: translateX(100%);
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+    .over-lay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+    }
+
+    #navmobile li {
+        display: block;
+    }
+    #navmobile li a{
+        color: #000;
+    }
+    .bar {
+        display: none;
+    }
+
+    #nav-mobile-input:checked ~ .over-lay {
+        display: block;
+    }
+
+    #nav-mobile-input:checked ~ #navmobile {
+        transform: translateX(0%);
+        transition: 0.2s;
+    }
+
+    .slogan {
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        top: 50vh;
+        bottom: 50vh;
+        z-index: 0;
+        
+    }
+
+    .slogan a {
+        margin: 8px;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .intro-item {
+        margin-top: 40px;
+    }
+
+    .service-item {
+        margin-top: 40px;
+    }
+
+    .service-more {
+        width: 100%;
+    }
+
+    #content .service {
+        width: 90%;
+    }
+
+    #content .service-more p {
+        color: #fff;
+        margin-right: 4px;
+        margin-left: 4px;
+        padding: 8px 4px;
+        width: 28%;
+        float: left;
+        background-color: #f05123;
+        border-radius: 4px;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .footer-item {
+        margin-top: 40px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}
